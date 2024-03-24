@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const postSchema = new mongoose.Schema(
   {
@@ -28,11 +28,10 @@ const postSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
-    },
-  },
-  { timestamps: true }
-);
+    }
+  }, { timestamps: true }
+)
 
 const Post = mongoose.model('Post', postSchema);
 
-export default Post;
+export default Post
